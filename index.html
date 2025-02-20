@@ -1,25 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Data Science Portfolio</title>
+    <title>手机壳店铺</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 这里可以链接外部样式表 -->
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; }
-        h1 { color: #333; }
-        a { color: #007bff; text-decoration: none; }
-        iframe { width: 100%; height: 600px; border: none; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .products, .feedback, .contact {
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
 
+<header>
+    <h1>欢迎来到手机壳店铺</h1>
+    <nav>
+        <a href="#products">产品</a>
+        <a href="#story">品牌故事</a>
+        <a href="#feedback">客户反馈</a>
+        <a href="#contact">联系我们</a>
+    </nav>
+</header>
 
+<div class="container">
 
+    <section id="products" class="products">
+        <h2>我们的产品</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <h3>时尚手机壳</h3>
+                <p>设计独特，适合年轻消费者。</p>
+            </div>
+            <div class="product-item">
+                <h3>耐用手机壳</h3>
+                <p>针对运动爱好者，防摔效果极佳。</p>
+            </div>
+            <div class="product-item">
+                <h3>环保手机壳</h3>
+                <p>使用环保材料，关爱地球。</p>
+            </div>
+            <!-- 可以继续添加更多产品项 -->
+        </div>
+    </section>
 
-    <h1>phoneshack</h1>
-    <h2>title</h2>
-    <p>Hi Aya</p >
+    <section id="story" class="story">
+        <h2>品牌故事</h2>
+        <p>我们的目标是为每位客户提供多样化和个性化的手机壳选择。通过创新设计和高品质材料，我们希望每一个用户都能找到最适合自己的手机壳。</p>
+    </section>
 
-   
+    <section id="feedback" class="feedback">
+        <h2>客户反馈</h2>
+        <p>我们重视每一位客户的意见，欢迎您分享使用体验与建议。</p>
+        <!-- 可以在此处添加客户反馈表单 -->
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>联系我们</h2>
+        <p>如需咨询，请发邮件至：<a href="mailto:contact@example.com">contact@example.com</a></p>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 手机壳店铺，保留所有权利</p>
+</footer>
+
 </body>
 </html>
