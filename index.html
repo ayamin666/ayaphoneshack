@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>手机壳店铺</title>
-    <link rel="stylesheet" href="styles.css"> <!-- 这里可以链接外部样式表 -->
+    <link rel="stylesheet" href="styles.css"> <!-- 可选择外部样式表 -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,7 +19,7 @@
             text-align: center;
         }
         nav {
-            margin: 20px 0;
+            margin: 20px auto;
         }
         nav a {
             margin: 0 15px;
@@ -28,19 +28,22 @@
         }
         .container {
             width: 80%;
-            margin: auto;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-bottom: 40px;
         }
-        .products, .feedback, .contact {
+        section {
             padding: 20px;
+            background-color: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         footer {
-            text-align: center;
-            padding: 10px 0;
             background-color: #4CAF50;
             color: white;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+            text-align: center;
+            padding: 10px 0;
         }
     </style>
 </head>
@@ -73,7 +76,6 @@
                 <h3>环保手机壳</h3>
                 <p>使用环保材料，关爱地球。</p>
             </div>
-            <!-- 可以继续添加更多产品项 -->
         </div>
     </section>
 
@@ -85,7 +87,6 @@
     <section id="feedback" class="feedback">
         <h2>客户反馈</h2>
         <p>我们重视每一位客户的意见，欢迎您分享使用体验与建议。</p>
-        <!-- 可以在此处添加客户反馈表单 -->
     </section>
 
     <section id="contact" class="contact">
